@@ -10,7 +10,10 @@ def fetch_res(uni_name, url):
     score = [str(i) for i in df[col_name[2]]]
     name = df[col_name[1]]
     df_in = df[col_name[0]]
-    df_score = df_penalty = df_name = df_pos =[]
+    df_score = []
+    df_penalty = [] 
+    df_name = []
+    df_pos = []
     now = 0
     for i in name :
         if i.find(uni_name) is not -1:
